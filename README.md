@@ -37,7 +37,7 @@ This project focuses on detecting abusive language in comments written in the Tu
 
 - Comments were scraped from YouTube using the YouTube Data API.
 - The dataset was preprocessed to clean text, remove noise, and label abusive and non-abusive comments.
-- Stored in the `data/` folder.
+- Stored in the `Dataset/` folder.
 
 ---
 
@@ -62,20 +62,19 @@ This project focuses on detecting abusive language in comments written in the Tu
 
 ## 📈 Example Usage
 
-Run the detection script:
-
-```bash
-python detect_abusive.py --input sample_comments.txt
-```
+- Run the detection script:
+   ```bash
+   python detect_abusive.py --input sample_comments.txt
+   ```
 ## Output
 
-```bash
-Comment: "هذا تعليق تونسي"
-Prediction: Non-abusive
-
-Comment: "كلام بذيء"
-Prediction: Abusive
-```
+   ```bash
+   Comment: "هذا تعليق تونسي"
+   Prediction: Non-abusive
+   
+   Comment: "كلام بذيء"
+   Prediction: Abusive
+   ```
 ## 📚 Documentation
 
 - [YouTube Data API](https://developers.google.com/youtube/v3)  
