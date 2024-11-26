@@ -29,7 +29,7 @@ This project focuses on detecting abusive language in comments written in the Tu
    ```bash
    pip install -r requirements.txt
    ```
-4. Set up API keys for YouTube Data API in a .env file:
+4. Set up your API key for YouTube Data API in the scrapper script:
    ```bash
    YOUTUBE_API_KEY=your_api_key
    ```
@@ -75,6 +75,37 @@ This project focuses on detecting abusive language in comments written in the Tu
    Comment: "كلام بذيء"
    Prediction: Abusive
    ```
+## Evaluation
+
+- **Support**: The test dataset contained 348 non-abusive comments (Class 0) and 360 abusive comments (Class 1), for a total of 708 samples.
+- **Macro Average**: Averaged precision, recall, and F1-score across both classes.
+- **Weighted Average**: Weighted by the number of samples in each class.
+  
+### CNN-LSTM Performance
+
+The CNN-LSTM model was evaluated on the test set and achieved the following metrics:
+
+| Metric        | Class 0 (Non-abusive) | Class 1 (Abusive) | Average     |
+|---------------|-----------------------|-------------------|-------------|
+| **Precision** | 0.86                 | 0.89              | 0.88        |
+| **Recall**    | 0.89                 | 0.86              | 0.88        |
+| **F1-Score**  | 0.88                 | 0.88              | 0.88        |
+| **Accuracy**  |                      |                   | **0.88**    |
+
+### BERT Performance
+
+The BERT model was evaluated on the test set and achieved the following metrics:
+
+| Metric        | Class 0 (Non-abusive) | Class 1 (Abusive) | Average     |
+|---------------|-----------------------|-------------------|-------------|
+| **Precision** | 0.85                 | 0.89              | 0.87        |
+| **Recall**    | 0.88                 | 0.85              | 0.87        |
+| **F1-Score**  | 0.88                 | 0.86              | 0.87        |
+| **Accuracy**  |                      |                   | **0.87**    |
+
+
+This demonstrates the robustness of the CNN-LSTM  and bert model in detecting abusive comments effectively.
+
 ## 📚 Documentation
 
 - [YouTube Data API](https://developers.google.com/youtube/v3)  
