@@ -118,10 +118,4 @@ This demonstrates the robustness of the CNN-LSTM  and bert model in detecting ab
 
  - Mohamed amine Hassine
  - Baligh Ghaouar
- 
----
-
-## 🔒 License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
